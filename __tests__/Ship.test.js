@@ -6,9 +6,9 @@ describe('Ship constructor', () => {
         expect(new Ship()).toBeInstanceOf(Object);
     });
 
-    it('has a starting port', () => {
+    it('has a current port', () => {
         const ship = new Ship('Dover');
-        expect(ship.startingPort).toBe('Dover');
+        expect(ship.currentPort).toBe('Dover');
     })
 });
 
@@ -18,6 +18,6 @@ describe('set sail', () => {
 
         ship.setSail();
 
-        expect(ship.startingPort).toBeFalsy();
+        expect(ship.currentPort).toBeFalsy();
     })
 })
