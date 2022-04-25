@@ -10,5 +10,16 @@ describe('port constructor', () => {
         const port = new Port('Dover');
         expect(port.name).toBe('Dover');
     })
-})
 
+//     it('can remove a ship', () => {
+//         const port = new Port('Dover');
+//         const titanic = {};
+//         const queenMary = {};
+
+//         port.addShip(titanic);
+//         port.addShip(queenMary);
+//         port.removeShip(queenMary);
+
+//         expect(port.ships).toEqual([titanic]);
+//     })
+})

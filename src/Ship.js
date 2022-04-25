@@ -2,7 +2,7 @@ const Port = require("../src/Port.js");
 
 function Ship (itinerary) {
     this.itinerary = itinerary;
-    this.currentPort = itinerary.port[0];
+    this.currentPort = itinerary.ports[0];
     this.previousPort = null;
 } 
 

@@ -23,15 +23,15 @@ describe('Ship constructor', () => {
 describe('set sail', () => {
     it('can set sail', () => {
         // const ship = new Ship('Dover');
-        const port = new Port('Dover');
+        const dover = new Port('Dover');
         const calais = new Port('Calais')
-        const itinerary = new Itinerary([dover. calais]);
+        const itinerary = new Itinerary([dover, calais]);
         const ship = new Ship(itinerary);
 
         ship.setSail();
 
         expect(ship.currentPort).toBeFalsy();
-        expect(ship.previousPort).toBe(port);
+        expect(ship.previousPort).toBe(dover);
     })
 })
 
