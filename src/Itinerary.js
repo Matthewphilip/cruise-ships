@@ -1,5 +1,5 @@
 function Itinerary(port) {
-    this.ports = port;
+    this.port = port;
 }
 
 module.exports = Itinerary;

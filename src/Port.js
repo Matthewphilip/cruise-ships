@@ -1,5 +1,5 @@
 function Port () {
-    this.name = "Dover";
+    this.name = 'Dover';
 };
 
 module.exports = Port;
